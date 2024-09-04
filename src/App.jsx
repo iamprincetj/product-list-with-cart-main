@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Item from "./components/Item";
 import "./App.css";
 import DisplayCart from "./components/DisplayCart";
@@ -10,6 +10,7 @@ function App() {
   const [addedCart, setAddedCart] = useState();
   const [render, setRender] = useState(false);
   const [modalDisplay, setModalDispaly] = useState("none");
+  const modalContentRef = useRef(null);
 
   useEffect(() => {
     setAddedCart(JSON.parse(localStorage.getItem("cartData")) || []);
@@ -83,8 +84,19 @@ function App() {
           </div>
         )}
       </aside>
-      <div className='modal-container' style={{ display: modalDisplay }}>
-        <div className='modal-content'>
+      <div
+        className='modal-container'
+        style={{ display: modalDisplay }}
+        onClick={() => {
+          if (
+            modalContentRef &&
+            !modalContentRef.current.contains(event.target)
+          ) {
+            setModalDispaly("none");
+          }
+        }}
+      >
+        <div className='modal-content' ref={modalContentRef}>
           <div className='inner-content'>
             <img
               src='/images/icon-order-confirmed.svg'
