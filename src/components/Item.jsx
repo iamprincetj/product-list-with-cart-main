@@ -141,7 +141,7 @@ const Item = ({ data, setRender }) => {
       </div>
       <div className='cart-info'>
         <p className='category'>{data.category}</p>
-        <h4 className='item-name'>{data.name}</h4>
+        <h2 className='item-name'>{data.name}</h2>
         <p className='item-price'>${data.price.toFixed(2)}</p>
       </div>
     </div>
