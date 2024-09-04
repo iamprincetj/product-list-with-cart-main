@@ -16,14 +16,12 @@ const Item = ({ data, setRender }) => {
         const cartData = JSON.parse(localStorage.getItem("cartData")).find(
           (d) => d.name === data.name
         );
-        console.log(cartData);
         setTimeout(() => {
           const cartData = JSON.parse(localStorage.getItem("cartData")).find(
             (d) => d.name === data.name
           );
           setItemCount(0);
-          console.log(cartData);
-        }, 2000);
+        }, 1000);
       });
     }
   });

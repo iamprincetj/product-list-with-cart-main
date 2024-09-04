@@ -2,8 +2,7 @@
   background-color: var(--Rose50);
   width: 100%;
   max-width: 576px;
-  height: auto;
-  max-height: 80vh;
+  max-height: 88vh;
   position: absolute;
   bottom: 0;
   border-radius: 1em;

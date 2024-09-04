@@ -20,7 +20,6 @@ function App() {
     };
     getData();
   }, [render]);
-  console.log();
   return (
     <div className='container'>
       <main className='main'>
@@ -45,6 +44,7 @@ function App() {
               <div className='order-total'>
                 <span>Order Total</span>{" "}
                 <h1>
+                  $
                   {addedCart
                     .reduce((first, last) => {
                       return first + last.price * last.itemCount;
