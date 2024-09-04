@@ -11,7 +11,7 @@ const Item = ({ data, setRender }) => {
   const removeIcon = document.querySelectorAll(".remove-icon");
 
   removeIcon.forEach((val) => {
-    if (val.alt === data.name) {
+    if (val.attributes.name.nodeValue === data.name) {
       val.addEventListener("click", () => {
         const cartData = JSON.parse(localStorage.getItem("cartData")).find(
           (d) => d.name === data.name
@@ -149,36 +149,5 @@ const Item = ({ data, setRender }) => {
     </div>
   );
 };
-
-/**
- * 
- *             <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='10'
-              height='10'
-              fill='none'
-              viewBox='0 0 10 10'
-              className='incre-icon icon'
-              onClick={() => setItemCount(itemCount + 1)}
-            >
-              <path
-                fill='#fff'
-                d='M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z'
-              />
-            </svg>
-
-                        <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='10'
-              height='2'
-              fill='none'
-              viewBox='0 0 10 2'
-              className='decre-icon icon'
-              onClick={() => setItemCount(itemCount > 1 ? itemCount - 1 : 1)}
-            >
-              <path fill='#fff' d='M0 .375h10v1.25H0V.375Z' />
-            </svg>
- * 
- */
 
 export default Item;

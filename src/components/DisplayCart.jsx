@@ -20,6 +20,7 @@ const DisplayCart = ({ cartItem, setRender }) => {
           fill='none'
           viewBox='0 0 10 10'
           className='remove-icon'
+          name={cartItem.name}
           onClick={() => {
             const cart = JSON.parse(localStorage.getItem("cartData"));
             const newCart = cart.filter((item) => item.name !== cartItem.name);
