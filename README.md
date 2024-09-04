@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/iamprincetj/product-list-with-cart-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/iamprincetj/product-list-with-cart-main)
+- Live Site URL: [ptj-product-list-with-cart](https://ptj-product-list-with-cart.netlify.app/)
 
 ## My process
 
