@@ -1,0 +1,106 @@
+.item-container div.img {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 0.5em;
+  border: 1px solid hsl(0, 4%, 90%);
+  box-shadow: 5px 5px 50px hsl(0, 0%, 82%);
+}
+
+.item-container div.img.click {
+  border: 3px solid var(--Red);
+}
+
+.item-container div.img .btn-cart {
+  width: 60%;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: none;
+  padding: 0.6em 1em;
+  border: 1px solid hsl(12, 20%, 44%);
+  border-radius: 1.5em;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container div.img .cart-amount {
+  background-color: var(--Red);
+  justify-content: space-between;
+}
+
+.item-container .cart-amount .icon {
+  border: none;
+  border: 2px solid #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  padding: 0.2em;
+}
+
+.item-container .cart-amount .icon:hover,
+.item-container .cart-amount .icon:focus {
+  background-color: #fff;
+}
+
+.item-container .cart-amount .icon:hover > path,
+.item-container .cart-amount .icon:focus > path {
+  fill: var(--Red);
+}
+
+.item-container .cart-amount span {
+  color: #fff;
+  font-weight: 400;
+}
+
+.item-container .cart-info {
+  margin: 1.5em 0;
+}
+
+.btn-cart .cart-icon {
+  margin-right: 0.5em;
+}
+
+.btn-cart span {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--Rose500);
+}
+
+.item-container div.img .add-cart:hover,
+.item-container div.img .add-cart:focus {
+  border-color: var(--Red);
+}
+
+.item-container div.img .add-cart:hover > span,
+.item-container div.img .add-cart:focus > span {
+  color: var(--Red);
+}
+
+.cart-info .category {
+  color: var(--Rose500);
+}
+
+.cart-info .item-name {
+  color: var(--Rose500);
+  font-weight: 500;
+}
+
+.cart-info .item-price {
+  color: var(--Red);
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .item-container {
+    width: 32%;
+  }
+}

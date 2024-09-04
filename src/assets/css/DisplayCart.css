@@ -1,0 +1,64 @@
+div.cart-display div.display-cart {
+  border-bottom: 1px solid var(--Rose300);
+  padding: 1em 0;
+  position: relative;
+}
+
+.display-cart div {
+  display: inline-block;
+}
+
+.display-cart div h4 {
+  margin-bottom: 0.8em;
+  color: var(--Rose500);
+}
+
+.display-cart div p {
+  color: var(--Rose400);
+}
+
+.display-cart div span:first-child {
+  margin-right: 0.5em;
+  font-weight: 500;
+  color: var(--Red);
+}
+
+.display-cart div span:last-child {
+  font-weight: 500;
+  color: var(--Rose500);
+  margin-left: 0.3em;
+}
+
+/*.remove-icon {
+  position: absolute;
+  width: 4%;
+  top: 40%;
+  right: 0;
+  border: 2px solid var(--Rose400);
+  border-radius: 100%;
+  padding: 0.1em;
+  cursor: pointer;
+}*/
+
+.remove-icon:hover,
+.remove-icon:focus {
+  border-color: var(--Rose900);
+  fill: var(--Rose900);
+}
+
+.remove-icon {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  border: 2px solid var(--Rose400);
+  border-radius: 100%;
+  padding: 0.15em;
+  cursor: pointer;
+}
+
+.remove-icon:hover > path {
+  fill: var(--Rose900);
+}
+
+svg path {
+}

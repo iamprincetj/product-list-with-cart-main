@@ -1,0 +1,234 @@
+/*.modal-container .modal-content {
+  width: 100%;
+  height: 88vh;
+  position: absolute;
+  bottom: 0;
+  border-radius: 1em;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.modal-content .inner-content {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.modal-content .inner-content .modal-heading {
+  font-size: 3rem;
+  color: var(--Rose900);
+  margin-top: 0.5em;
+}
+
+.inner-content .modal-title {
+  font-size: 1.2rem;
+  color: var(--Rose500);
+}
+
+.modal-content .inner-content button {
+  border: none;
+  border-radius: 5rem;
+  width: 100%;
+  background-color: var(--Red);
+  color: var(--Rose50);
+  padding: 1.1em;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.modal-content .item-container {
+  border: 1px solid red;
+  background-color: var(--Rose100);
+  margin: 2.5em 0;
+  padding: 1rem;
+  border-radius: 0.5em;
+}
+
+.item-container .order-total {
+  display: flex;
+  align-items: center;
+}
+
+.item-container .order-total h1 {
+  color: var(--Rose900);
+  font-size: 1.9rem;
+}
+
+.item-container .order-total span {
+  color: var(--Rose900);
+}
+
+.modal-item-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.modal-item-container img {
+  width: 20%;
+  box-shadow: 50px 5px 100px var(--Rose100);
+  border-radius: 0.3em;
+}
+
+.modal-item-container .item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.item-info div h4 {
+  width: 11.5rem;
+  color: var(--Rose900);
+  margin-bottom: 0.7em;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-info div p {
+  color: var(--Rose400);
+  font-weight: 400;
+}
+
+.item-info div p span {
+  color: var(--Red);
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+.item-info .item-total {
+  color: var(--Rose900);
+  font-weight: 600;
+}
+**/
+
+.modal-container .modal-content {
+  background-color: var(--Rose50);
+  width: 100%;
+  max-width: 600px;
+  height: 88vh;
+  position: absolute;
+  bottom: 0;
+  border-radius: 1em;
+}
+
+.modal-content .inner-content {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.modal-content .item-container {
+  width: 100%;
+  background-color: var(--Rose100);
+  margin: 1.5em 0;
+  padding: 1.3rem;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+}
+
+.modal-item-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.modal-item-container img {
+  width: 20%;
+  box-shadow: 50px 5px 100px var(--Rose100);
+  border-radius: 0.3em;
+}
+
+.item-container .order-total {
+  display: flex;
+  align-items: center;
+}
+
+.item-container .order-total h1 {
+  color: var(--Rose900);
+  font-size: 1.9rem;
+}
+
+.item-container .order-total span {
+  color: var(--Rose900);
+}
+
+.modal-content .inner-content .modal-heading {
+  font-size: 3rem;
+  color: var(--Rose900);
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5em;
+}
+
+.inner-content .modal-title {
+  font-size: 1.2rem;
+  color: var(--Rose500);
+}
+
+.modal-content .inner-content button {
+  border: none;
+  border-radius: 5rem;
+  width: 100%;
+  background-color: var(--Red);
+  color: var(--Rose50);
+  padding: 1.1em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.modal-item-container .item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.item-info div h4 {
+  width: 10.5rem;
+  color: var(--Rose900);
+  margin-bottom: 0.7em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-info div p {
+  color: var(--Rose400);
+  font-weight: 400;
+}
+
+.item-info div p span {
+  color: var(--Red);
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+.item-info .item-total {
+  color: var(--Rose900);
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-container .modal-content {
+    bottom: auto;
+    height: auto;
+  }
+
+  .modal-item-container img {
+    width: 13%;
+  }
+  .modal-item-container .item-info {
+    width: 83%;
+  }
+}

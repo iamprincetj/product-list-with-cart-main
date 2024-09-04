@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "RedHatText-var";
+  src: url("../assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+:root {
+  --Rose50: hsl(20, 50%, 98%);
+  --Rose100: hsl(13, 31%, 94%);
+  --Rose300: hsl(14, 25%, 72%);
+  --Rose400: hsl(7, 20%, 60%);
+  --Rose500: hsl(12, 20%, 44%);
+  --Rose900: hsl(14, 65%, 9%);
+  --Red: hsl(14, 86%, 42%);
+}
+
+* {
+  font-family: "RedHatText-var";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--Rose100);
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+.container main.main {
+  width: 100%;
+}
+
+.container .main h1 {
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+}
+
+.container .aside {
+  width: 100%;
+  background-color: #fff;
+  align-self: flex-start;
+  box-sizing: border-box;
+  border-radius: 0.7em;
+}
+
+.aside .display-cart-container {
+  width: 85%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.container .aside .empty-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .aside .empty-para {
+  text-align: center;
+  color: var(--Rose500);
+  font-weight: 500;
+  margin: 1.5em 0;
+}
+
+.container .aside h2 {
+  color: var(--Red);
+  margin-bottom: 1em;
+}
+
+.container .order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.container .carbon {
+  margin: 1.5em 0;
+  background-color: var(--Rose100);
+  border-radius: 0.5em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.container .carbon .neutral-icon {
+  margin-right: 0.5em;
+}
+
+.carbon p {
+  color: var(--Rose900);
+  font-size: 0.9rem;
+}
+
+.container .carbon span {
+  font-weight: 500;
+}
+
+.container .confirm-btn {
+  width: 100%;
+  padding: 0.8em 0;
+  background-color: var(--Red);
+  color: #fff;
+  border: none;
+  border-radius: 5em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    max-width: 90%;
+  }
+
+  .container main.main {
+    width: 65%;
+  }
+
+  .container .aside {
+    width: 30%;
+  }
+
+  .container .main .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
